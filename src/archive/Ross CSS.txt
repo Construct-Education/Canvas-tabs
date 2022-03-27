@@ -1,0 +1,1407 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+html,
+input,
+button,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Open Sans', 'LatoWeb', Arial, Helvetica, sans-serif;
+}
+
+.pages.show .page-title,
+.pages .header-bar-outer-container .header-bar-container .header-left-flex .course-title {
+    font-size: 2.25rem;
+    letter-spacing: -0.0625rem;
+    font-weight: 600;
+    margin: 1.25rem 0 2.5rem;
+    color: var(--ic-brand-primary);
+}
+
+body {
+    font-size: 0.9375rem;
+    letter-spacing: -0.0125rem;
+}
+
+.btn,
+.Button,
+.ui-button {
+    border-radius: 0.375rem;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+.Button--block+.Button--block,
+.btn-block+.btn-block {
+    margin-top: 1rem;
+}
+
+.btn-published,
+.btn-primary,
+.Button--primary,
+.btn-warning,
+.Button--warning,
+.btn-danger,
+.Button--danger,
+.btn-success,
+.Button--success,
+.btn-info,
+.Button--secondary {
+    border: 0;
+    line-height: 1.375rem;
+}
+
+.Button.external:hover span,
+.btn.external:hover span {
+    text-decoration: none
+}
+
+.Button--course-syllabus,
+.Button--course-link {
+    line-height: 1;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 3.125rem;
+    text-align: left;
+    position: relative;
+}
+
+.Button--course-syllabus:before,
+.Button--course-link:before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0.875rem;
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd"><path d="M2,0 L22,0 C23.1045695,-2.02906125e-16 24,0.8954305 24,2 L24,28 C24,29.1045695 23.1045695,30 22,30 L2,30 C0.8954305,30 1.3527075e-16,29.1045695 0,28 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z M6,8 L6,13 L18,13 L18,8 L6,8 Z M6,17 L6,19 L18,19 L18,17 L6,17 Z" fill="%23002C5A" fill-rule="nonzero" transform="translate(-12.000000, -12.000000) translate(12.000000, 12.000000)"/><g transform="translate(-12.000000, -12.000000) translate(12.000000, 12.000000) translate(6.000000, 8.000000)"/></g></svg>');
+    background-size: 100%;
+    width: 1.5rem;
+    height: 1.875rem;
+    background-repeat: no-repeat;
+}
+
+.Button--course-link:before {
+    background-image: url('data:image/svg+xml;utf8,<svg width="24" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g transform="translate(-12.000000, -12.000000) translate(12.000000, 12.000000)" fill-rule="nonzero" fill="none"><rect fill="%23FFCB0B" width="24" height="30" rx="2"/><path d="M9.719,17.281 C9.8655,17.4275 10.0575,17.501 10.2495,17.501 C10.4415,17.501 10.6335,17.4275 10.78,17.281 L14.281,13.78 C14.574,13.487 14.574,13.012 14.281,12.719 C13.988,12.426 13.513,12.426 13.22,12.719 L9.719,16.22 C9.426,16.513 9.426,16.988 9.719,17.281 Z M11.4695,18.82 C10.563,19.727 9.087,19.727 8.1795,18.82 C7.2725,17.913 7.2725,16.4375 8.1795,15.5305 L9.8245,13.8855 L8.764,12.825 L7.119,14.47 C5.627,15.962 5.627,18.3895 7.119,19.8815 C7.865,20.627 8.845,21 9.825,21 C10.805,21 11.785,20.627 12.5305,19.881 L14.1755,18.236 L13.1145,17.175 L11.4695,18.82 Z M16.881,10.119 C15.3895,8.627 12.9615,8.627 11.4695,10.119 L9.8245,11.764 L10.8855,12.825 L12.5305,11.18 C12.984,10.7265 13.5795,10.5 14.175,10.5 C14.7705,10.5 15.3665,10.727 15.82,11.1805 C16.727,12.0875 16.727,13.563 15.82,14.47 L14.175,16.115 L15.236,17.176 L16.881,15.531 C18.373,14.0385 18.373,11.611 16.881,10.119 Z" fill="%23002C5A"/></g></svg>');
+    height: 2.125rem;
+}
+
+@media only screen and (min-height: 400px) {
+    .ic-app-header__menu-list-link:not(.ic-app-header__menu-list-link--nav-toggle) {
+        padding: 0.75rem 0;
+    }
+}
+
+.user_content h1,
+.user_content .h1 {
+    font-size: 2.25rem;
+    color: var(--ic-brand-primary);
+    margin-bottom: 1.875rem;
+    font-weight: 600;
+    letter-spacing: -0.0625rem;
+}
+
+.user_content>ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 2.5rem;
+}
+
+.user_content ul ul,
+.user_content ol ol,
+.user_content ol ul,
+.user_content ul ol {
+    margin-left: 2rem;
+    padding-top: 16px;
+}
+
+.user_content>ol {
+    counter-reset: smart-count;
+    /* padding-left: 2.5rem; */
+}
+
+.user_content>ol>li {
+    counter-increment: smart-count;
+    position: relative;
+}
+
+.user_content>ul>li {
+    position: relative;
+}
+
+.user_content>ul>li:before {
+    content: '';
+    position: absolute;
+    background-color: var(--ic-brand-font-color-dark-lightened-30);
+    height: .584375rem;
+    width: .584375rem;
+    left: -1.5rem;
+    top: .584375rem;
+    border-radius: 50%;
+}
+
+.user_content p,
+.user_content li {
+    font-size: 1.0625rem;
+    letter-spacing: -0.0125rem;
+    line-height: 1.65;
+    margin-top: 0;
+    /* margin-bottom: 1.75rem; */
+    color: var(--ic-brand-font-color-dark);
+}
+
+.user_content p.condensed {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.user_content li {
+    margin-bottom: 1.25rem;
+}
+
+.user_content h1,
+.user_content h2,
+.user_content h3,
+.user_content h4,
+.user_content h5,
+.user_content h6,
+.user_content .h1,
+.user_content .h2,
+.user_content .h3,
+.user_content .h4,
+.user_content .h5,
+.user_content .h6 {
+    margin-bottom: 1rem;
+}
+
+.user_content h2,
+.user_content .h2 {
+    text-transform: uppercase;
+    font-size: 1.4375em;
+    line-height: 1.75rem;
+    letter-spacing: 0.046875rem;
+    font-weight: 600;
+    color: var(--ic-brand-primary);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.user_content img {
+    border-radius: 0.375rem;
+}
+
+.module-sequence-footer {
+    margin-top: 3rem;
+}
+
+.user_content .noodle-teacher-information-box {
+    border-radius: 0.375rem;
+    background-color: #FAFAFA;
+    border: 0.0625rem solid #eee;
+    margin-bottom: 2rem;
+}
+
+.user_content .noodle-teacher-information-box *[class^=col] {
+    border-right: 0.0625rem solid #eee;
+}
+
+.user_content .noodle-teacher-information-box *[class^=col]:last-child {
+    border-right: none;
+}
+
+.user_content .noodle-teacher-information-box *[class^=col]>* {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.user_content .noodle-teacher-information-box *[class^=col]:last-child>* {
+    padding-right: 1rem;
+}
+
+.user_content .noodle-teacher-information-box *[class^=col]:first-child>* {
+    padding-left: 1rem;
+}
+
+.user_content .noodle-teacher-information-box p {
+    margin: 0;
+    font-size: 0.9375rem;
+}
+
+.user_content .noodle-teacher-information-box p+p {
+    font-size: 0.8125rem;
+}
+
+.user_content .noodle-teacher-information-box a {
+    color: var(--ic-brand-font-color-dark-lightened-15);
+}
+
+.user_content .noodle-teacher-information-box img {
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    display: inline-block;
+    /*float: left;*/
+    margin: 0.25rem 0.625rem 0 0;
+}
+
+.user_content .noodle-outcomes-box *[class^='col'] {
+    background-color: #FDFDFD;
+    background-image: url('data:image/svg+xml;utf8,<svg width="20" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Group 9</title><desc>Created with Sketch.</desc><g stroke="%23FFCB0B" stroke-width="2.000001" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M5.50000425 12.0000065L8.50000575 14.0000075 12.5000077 8.0000045" transform="translate(-15.000000, -28.000000) translate(16.000000, 29.000000)"/><path d="M9.000006,5.00000098e-07 L1.4999993e-06,5.000003 L1.4999993e-06,11.000006 C0.118001559,15.3780082 1.61500231,19.5850103 9.000006,22.0000115 C16.3850097,19.5850103 17.8820104,15.3780082 18.0000105,11.000006 L18.0000105,5.000003 L9.000006,5.00000098e-07 Z" transform="translate(-15.000000, -28.000000) translate(16.000000, 29.000000)"/></g></svg>');
+    background-size: 1.125rem;
+    background-repeat: no-repeat;
+    background-position: 1.375rem center;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+    margin: 0 0.5rem;
+    position: relative;
+    justify-content: center;
+}
+
+.user_content .noodle-outcomes-box p {
+    font-size: 0.875rem;
+    margin-left: 3.125rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    margin-right: 1rem;
+}
+
+.user_content .noodle-live-session-info-box {
+    border-radius: 0.375rem;
+    background-color: #FAFAFA;
+    border: 0.0625rem solid #eee;
+    margin: 0;
+}
+
+.user_content .noodle-live-session-info-box p {
+    margin: 0;
+    font-size: 0.9375rem;
+}
+
+.user_content .noodle-live-session-info-box p.session-label {
+    font-size: 0.6875rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.user_content .noodle-live-session-info-box *[class^=col]>* {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.user_content .noodle-live-session-info-box *[class^=col]:first-child>* {
+    padding-left: 1rem;
+}
+
+.user_content .noodle-live-session-info-box *[class^=col]:first-child,
+.user_content .noodle-live-session-info-box *[class^=col]:nth-child(2) {
+    max-width: 12.5rem;
+}
+
+.user_content .noodle-live-session-info-box *[class^=col]:last-child>* {
+    padding-right: 1rem;
+    text-align: right;
+}
+
+.user_content .noodle-live-session-info-box .Button+p {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 0.8125rem;
+}
+
+.user_content .noodle-call-in-info {
+    display: none;
+    border-radius: 0.375rem;
+    background-color: #FAFAFA;
+    border: 0.0625rem solid #eee;
+    margin: 0;
+    padding: 1rem;
+}
+
+.user_content .noodle-call-in-info p,
+.user_content .noodle-call-in-info p a,
+.user_content .noodle-call-in-info a {
+    font-size: .9375rem;
+}
+
+.module-sequence-footer .module-sequence-footer-content {
+    padding: 0;
+    border-color: #DDDDDD;
+}
+
+.module-sequence-footer-button--next .Button,
+.Button.module-sequence-footer-button--next,
+.Button.module-sequence-footer-button--previous,
+.module-sequence-footer-button--previous .Button {
+    background: var(--ic-brand-button--primary-bgd);
+    color: var(--ic-brand-button--primary-text);
+    margin-top: 1rem;
+    padding: 0.5rem 0.875rem;
+    letter-spacing: 0.0125rem;
+}
+
+.module-sequence-footer-button--next .Button:hover,
+.Button.module-sequence-footer-button--next:hover,
+.Button.module-sequence-footer-button--previous:hover,
+.module-sequence-footer-button--previous .Button:hover {
+    background: var(--ic-brand-button--primary-bgd-darkened-5);
+    color: var(--ic-brand-button--primary-text)
+}
+
+.item-group-container {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.item-group-condensed .ig-row {
+    box-shadow: none;
+    border: 0;
+    background: #ffffff;
+    padding: 1.125rem 0.625rem 1.125rem 1rem;
+}
+
+.item-group-container .ig-type-icon,
+.ig-published:not(.student-view) .ig-type-icon {
+    color: var(--ic-brand-button--secondary-bgd);
+}
+
+#context_modules .ig-header .name {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-shadow: none;
+    letter-spacing: 0.046875rem;
+    font-weight: 700 !important;
+    color: var(--ic-brand-primary);
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+.context_module_item.context_module_sub_header .locked_title {
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.ig-list .ig-row a.ig-title {
+    font-weight: 400;
+    letter-spacing: .01em;
+}
+
+#context_modules .item-group-condensed.context_module:not(.collapsed_module) .ig-header-title .name {
+    font-weight: 800!important;
+}
+
+#context_modules .ig-header-title {
+    font-size: 1.5rem;
+    letter-spacing: 0.046875rem;
+    outline: 0;
+}
+
+.ig-header .ig-header-title .icon-mini-arrow-down,
+.ig-header .ig-header-title .icon-mini-arrow-right {
+    vertical-align: middle;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 0.625rem;
+    color: var(--ic-brand-primary);
+    display: inline-block;
+}
+
+.ig-list .ig-row.ig-published:not(.student-view):before {
+    width: 0.125rem;
+}
+
+.item-group-condensed .ig-row:hover {
+    background: #FAFAFA;
+}
+
+.item-group-condensed .ig-list li {
+    border-bottom: 0.0625rem solid #EEEEEE!important;
+}
+
+.item-group-condensed .ig-list li:last-child {
+    border-bottom: 0!important;
+}
+
+.item-group-condensed .ig-list li:first-child .ig-row,
+.item-group-condensed .ig-list li:first-of-type .ig-row,
+.item-group-condensed .first_visible .ig-row {
+    border-top: 0.0625rem solid #EEEEEE;
+    border-radius: 0;
+}
+
+
+/*****New State U accordion******/
+
+.container_state_U {
+    width: 100%;
+    max-width: 97.5%;
+    margin: 0px;
+}
+
+div.accordion_state_U {
+    width: 100%;
+    font-size: 13pt;
+    background-color: #F8F8F8;
+    border-bottom: 0.0625rem solid #EEEEEE;
+    letter-spacing: -0.0125rem;
+    line-height: 1.65;
+    text-align: left;
+    display: block;
+    padding: 1.3rem;
+    font-size: 18px;
+    color: var(--ic-brand-primary);
+    cursor: pointer;
+    position: relative;
+    margin: 0.2rem 0;
+    border-radius: 1rem;
+    transition: background-color 0.2s linear;
+}
+
+div.accordion_state_U:after {
+    content: '';
+    background-image: url('data:image/svg+xml;utf8,<svg width="19" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill-rule="nonzero" stroke="%239D9D9D" stroke-width="1.5" fill="none" stroke-linecap="square"><path d="M673,8 L673,24" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000)"/><path d="M672.5,8.5 L672.5,24.5" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000) translate(672.500000, 16.500000) rotate(-270.000000) translate(-672.500000, -16.500000)"/></g></svg>');
+    background-size: 1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 1.333rem;
+}
+
+div.accordion_state_U.is-open:after {
+    background-image: url('data:image/svg+xml;utf8,<svg width="19" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill-rule="nonzero" stroke="%239D9D9D" stroke-width="1.5" fill="none" stroke-linecap="square"><path d="M672.5,8.5 L672.5,24.5" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000) translate(672.500000, 16.500000) rotate(-270.000000) translate(-672.500000, -16.500000)"/></g></svg>');
+}
+
+div.accordion_state_U:hover,
+div.accordion_state_U.is-open {
+    background-color: #ddd;
+}
+
+.accordion_content_state_U {
+    background-color: #ffffff;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+
+/***End State U accordion****/
+
+.noodle-module-accordion .element_toggler {
+    font-size: 13pt;
+    letter-spacing: -0.0125rem;
+    line-height: 1.65;
+    border-bottom: 0.0625rem solid #EEEEEE;
+    padding: 1.3rem;
+    margin: 0;
+    display: block;
+    color: var(--ic-brand-primary);
+    background-color: #F8F8F8;
+    position: relative;
+    margin: 0.5rem 0;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.noodle-module-accordion .element_toggler:after {
+    content: '';
+    background-image: url('data:image/svg+xml;utf8,<svg width="19" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill-rule="nonzero" stroke="%239D9D9D" stroke-width="1.5" fill="none" stroke-linecap="square"><path d="M673,8 L673,24" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000)"/><path d="M672.5,8.5 L672.5,24.5" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000) translate(672.500000, 16.500000) rotate(-270.000000) translate(-672.500000, -16.500000)"/></g></svg>');
+    background-size: 1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 1.333rem;
+}
+
+.noodle-module-accordion .element_toggler[aria-expanded=false]:after {
+    background-image: url('data:image/svg+xml;utf8,<svg width="19" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill-rule="nonzero" stroke="%239D9D9D" stroke-width="1.5" fill="none" stroke-linecap="square"><path d="M673,8 L673,24" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000)"/><path d="M672.5,8.5 L672.5,24.5" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000) translate(672.500000, 16.500000) rotate(-270.000000) translate(-672.500000, -16.500000)"/></g></svg>');
+}
+
+.noodle-module-accordion .element_toggler[aria-expanded=true]:after {
+    background-image: url('data:image/svg+xml;utf8,<svg width="19" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill-rule="nonzero" stroke="%239D9D9D" stroke-width="1.5" fill="none" stroke-linecap="square"><path d="M672.5,8.5 L672.5,24.5" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000) translate(672.500000, 16.500000) rotate(-270.000000) translate(-672.500000, -16.500000)"/></g></svg>');
+}
+
+.noodle-module-accordion .element_toggler[aria-expanded=false]+.element_to_toggle {
+    display: none;
+    background-color: #FAFAFA;
+}
+
+.noodle-module-accordion .element_toggler[aria-expanded=true] {
+    /*background-color: #FAFAFA;*/
+    border-color: #FAFAFA;
+}
+
+.noodle-module-accordion .element_to_toggle {
+    padding: 0 1rem 1rem;
+    /*background-color: #FAFAFA;*/
+}
+
+.noodle-module-accordion .module-card p {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.0625rem 0.45rem 0 rgba(0, 0, 0, 0.2);
+    margin: 0.5rem;
+    font-size: 11pt;
+}
+
+.noodle-module-accordion .module-card p:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.noodle-module-accordion .module-card p:hover {
+    background: #FFCB05;
+}
+
+.noodle-module-accordion .module-card a {
+    text-decoration: none !important;
+}
+
+.noodle-module-accordion .module-card img {
+    max-width: 100% !important;
+}
+
+.noodle-module-accordion i[class^=icon] {
+    color: var(--ic-brand-button--secondary-bgd);
+    vertical-align: text-top;
+}
+
+.noodle-module-accordion i[class^=icon]:before {
+    font-size: 1.4rem;
+}
+
+.noodle-module-accordion .element_toggler strong {
+    width: 6rem;
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+.noodle-overview-list {
+    display: block;
+}
+
+.noodle-overview-list .overview-title {
+    display: block;
+    background: #EEEEEE;
+    padding: .5rem 1rem;
+    font-size: 1.1.rem;
+    letter-spacing: 0.0125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.noodle-overview-list .row-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.0625rem solid #EEEEEE;
+}
+
+.noodle-overview-list .block-yellow,
+.noodle-overview-list .block-red,
+.noodle-overview-list .block-clear,
+.noodle-overview-list .block-blue {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 4.0625rem;
+    font-size: 0.8875rem;
+    line-height: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.1875rem;
+    background-color: rgba(228, 196, 66, 0.2);
+    border: 0.0625rem solid #E4C442;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    margin-right: 2rem;
+}
+
+.noodle-overview-list .block-red {
+    background-color: #FAE5E3;
+    border-color: #E67C73;
+}
+
+.noodle-overview-list .block-blue {
+    background-color: #D9E7FD;
+    border-color: #4285F4;
+}
+
+.noodle-overview-list .block-clear {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.noodle-overview-list .row-copy {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    margin: 0;
+    padding: 1.2rem 0;
+}
+
+
+/* ========================START CUSTOM=======================================
+Note:
+Max width of the grid is dependent on parent level width.
+45% seems to fit 4 columns into the page when each box is set to 150px width.
+Might need to be changed to 100% when uploaded onto canvas environment
+*/
+
+
+/*
+============================= * * * * =====================================
+The following were commented out because they are not in use
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: inherit;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFCB0B;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+===========================END COMMENT========================================
+*/
+
+
+/* ========================START CUSTOM=======================================
+Note:
+Max width of the grid is dependent on parent level width.
+45% seems to fit 4 columns into the page when each box is set to 150px width.
+Might need to be changed to 100% when uploaded onto canvas environment
+*/
+
+.cdk-wrapper {
+    max-width: 100%;
+    padding: 0;
+}
+
+.cdk-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-auto-rows: minmax(250px, 1fr);
+    grid-gap: 1px;
+    padding-bottom: 1px;
+    position: inherit;
+}
+
+
+/* Each container is an <a> tag to make the whole box a link */
+
+.cdk-grid-container a,
+.cdk-grid-container a:hover {
+    text-decoration: none
+}
+
+
+/* To Change themes from the grid-container level */
+
+.theme-blue>a {
+    background-color: #72B4D3;
+}
+
+.theme-green>a {
+    background-color: #00B3AD;
+}
+
+.theme-orange>a {
+    background-color: #d67424;
+}
+
+
+/* For standard blocks in cdk-grid */
+
+.cdk-grid-block {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    background: inherit;
+    font-family: 'Open Sans', 'LatoWeb', Arial, Helvetica, sans-serif;
+    line-height: 1.25rem;
+    color: #000000;
+    padding: 6.5%;
+}
+
+
+/* For module specific grid-blocks in cdk-grid */
+
+.cdk-class.cdk-class {
+    background-color: #FFCC02;
+    color: #1B4074;
+}
+
+
+/* For "M1", "M2", "M3", etc in cdk-grid-blocks  */
+
+.cdk-header {
+    font-size: 22pt;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.cdk-subheader {
+    word-wrap: break-word;
+    font-size: 14pt;
+    font-weight: 300;
+    margin: 0;
+}
+
+.cdk-grid-block:hover {
+    color: white;
+    visibility: visible;
+    opacity: 1;
+    background-color: #1B4074;
+    transition: .5s ease;
+}
+
+
+/*TASHINGA's CODE STARTS HERE*/
+
+
+/*THIS IS A SPACER PARAGRAPH PUT IN FOR BREAKS*/
+
+p.spacer {
+    margin-bottom: 0;
+}
+
+
+/*THE INFO-BOX's (QUOTE BOX) TEXT MUST BE CENTERED*/
+
+.mig-blockquote>div>p,
+.mig-blockquote>p {
+    margin-bottom: 0;
+}
+
+
+/*PUT THE HOVER  STATE ON THE ARCODIAN TABS AS THE ACTIVE STATE*/
+
+.mig-tab[aria-selected=true] {
+    background-color: #FFCB05;
+}
+
+
+/*WHEN THE TAB HAS BEEN SELECTED I JUST MADE THE OUTLINE LIGHT GRET*/
+
+.mig-tab:focus {
+    outline: 1;
+    outline-color: #cccccc;
+}
+
+
+/*THE NEXT AND FORWARDS BUTTONS*/
+
+.Button.module-sequence-footer-button--previous,
+.module-sequence-footer-button--next .Button {
+    color: #1B4074;
+    background: linear-gradient(130deg, rgba(255, 203, 5, 1) 50%, rgba(255, 214, 76, 1) 50%);
+}
+
+.Button.module-sequence-footer-button--previous:hover,
+.module-sequence-footer-button--next:hover .Button {
+    color: #ffffff;
+    background: linear-gradient(130deg, rgba(23, 41, 71, 1) 50%, rgba(34, 61, 103, 1) 50%);
+}
+
+
+/*FOR THE NON QUOTE INFOMATION BOX*/
+
+.mig-blockquote img {
+    margin-left: 1em;
+    position: absolute;
+    top: 5em !important;
+    left: -0.65em !important;
+}
+
+
+/*FOR THE OBJECTIVES BLOCKS*/
+
+.user_content .noodle-outcomes-box p {
+    margin-top: 0.75rem !important;
+    margin-top: 3.4em !important;
+}
+
+
+/*TASHINGA's CODE ENDS HERE*/
+
+
+/*JONATHAN's CODE BEGINS HERE*/
+
+.construct-regular-H2 {
+    text-transform: none!important;
+    font-size: 1.4375em;
+    line-height: 1.75rem;
+    letter-spacing: 0.046875rem;
+    font-weight: 600;
+    color: var(--ic-brand-primary);
+}
+
+
+/* center aligned */
+
+.construct-flex-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* top aligned */
+
+.construct-flex-row-align-top {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+
+/* baseline aligned */
+
+.construct-flex-row-align-baseline {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
+
+
+/* bottom aligned */
+
+.construct-flex-row-align-bottom {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.construct-flex-col {
+    flex: 50%;
+}
+
+.construct-flex-col-wide {
+    flex: 70%;
+}
+
+.construct-flex-col-narrow {
+    flex: 30%;
+}
+
+.construct-flex-col-wide {
+    flex: 70%;
+}
+
+.construct-flex-col-hundred-percent {
+    flex: 100%;
+}
+
+
+/*Responsive padding --------------------------------------- */
+
+.construct-left-column-padding {
+    padding-left: 50px;
+    ;
+}
+
+.construct-right-column-padding {
+    padding-left: 20px;
+    ;
+}
+
+
+/*Keyboard Accessible Accordion --------------------------------------- */
+
+.construct-michigan-accessible-accordion .construct-michigan-element-toggler a {
+    font-size: 13pt;
+    letter-spacing: -0.0125rem;
+    line-height: 1.65;
+    border-bottom: 0.0625rem solid #EEEEEE;
+    padding: 1.3rem;
+    margin: 0;
+    display: block;
+    color: var(--ic-brand-primary);
+    /* color:#003E78; */
+    background-color: #F8F8F8;
+    position: relative;
+    margin: 0.5rem 0;
+    position: relative;
+    border-radius: 1rem;
+    text-decoration: none!important;
+}
+
+.construct-michigan-accessible-accordion .construct-michigan-element-toggler a:after {
+    content: '';
+    background-image: url('data:image/svg+xml;utf8,<svg width="19" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill-rule="nonzero" stroke="%239D9D9D" stroke-width="1.5" fill="none" stroke-linecap="square"><path d="M673,8 L673,24" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000)"/><path d="M672.5,8.5 L672.5,24.5" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000) translate(672.500000, 16.500000) rotate(-270.000000) translate(-672.500000, -16.500000)"/></g></svg>');
+    background-size: 1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 1.333rem;
+}
+
+.construct-michigan-accessible-accordion .construct-michigan-element-toggler a[aria-expanded=false]:after {
+    background-image: url('data:image/svg+xml;utf8,<svg width="19" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill-rule="nonzero" stroke="%239D9D9D" stroke-width="1.5" fill="none" stroke-linecap="square"><path d="M673,8 L673,24" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000)"/><path d="M672.5,8.5 L672.5,24.5" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000) translate(672.500000, 16.500000) rotate(-270.000000) translate(-672.500000, -16.500000)"/></g></svg>');
+}
+
+.construct-michigan-accessible-accordion .construct-michigan-element-toggler a[aria-expanded=true]:after {
+    background-image: url('data:image/svg+xml;utf8,<svg width="19" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill-rule="nonzero" stroke="%239D9D9D" stroke-width="1.5" fill="none" stroke-linecap="square"><path d="M672.5,8.5 L672.5,24.5" transform="translate(-663.000000, -32.000000) translate(0.000000, 25.000000) translate(672.500000, 16.500000) rotate(-270.000000) translate(-672.500000, -16.500000)"/></g></svg>');
+}
+
+.construct-michigan-accessible-accordion-content {
+    display: none;
+    padding: 0 1rem 1rem;
+}
+
+
+/* .construct-michigan-accessible-accordion-content p {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.0625rem 0.45rem 0 rgba(0, 0, 0, 0.2);
+    margin: 0.5rem;
+    font-size: 11pt;
+  } */
+
+.construct-michigan-accessible-accordion-content.active {
+    display: block;
+}
+
+
+/* ------------------------ */
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+@media (max-width: 1100px) {
+    .construct-flex-responsive-1100 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    .construct-flex-row-align-top,
+    .construct-flex-row-align-baseline {
+        flex-direction: column;
+        align-items: center;
+    }
+    .construct-left-column-padding {
+        padding-left: unset;
+    }
+}
+
+@media (max-width: 600px) {
+    .construct-flex-row {
+        flex-direction: column;
+    }
+}
+
+
+/* ----------------------------------------- accessible tabs -------------------------------------------------------- */
+
+.construct-accessible-tablist li[aria-selected="true"] {
+    color: white;
+    background-color: #fff;
+    border-bottom: 1px solid white;
+}
+
+.construct-accessible-tabs div[aria-hidden="true"] {
+    display: none;
+}
+
+.construct-accessible-tablist {
+    margin: 0 0px;
+    padding: 0;
+    list-style: none;
+    color: white;
+}
+
+.construct-accessible-tablist li[aria-selected="true"] {
+    background-color: #fff;
+    border-bottom: 1px solid white;
+}
+
+.construct-accessible-tab {
+    float: left;
+    display: inline;
+    line-height: 2.5em;
+    list-style: none;
+    position: relative;
+    top: 1px;
+    margin: 0 0.2em 1px 0;
+    border-bottom: 0 !important;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.construct-accessible-tabs div[aria-hidden="false"] {
+    display: block;
+}
+
+.construct-accessible-panel {
+    clear: both;
+    display: block;
+    margin: 0 0 0 0;
+    padding: 10px;
+    border-color: #c7cdd1;
+    padding: 14px;
+    background-color: #fff;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+}
+
+.construct-accessible-tab:hover {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.construct-accessible-tab span {
+    cursor: pointer;
+}
+
+.construct-accessible-tablist li[aria-selected="true"] span {
+    cursor: text;
+}
+
+.construct-accessible-lettertab span:hover {
+    opacity: 0.6;
+}
+
+
+/* seems to not be responsive for some reason now */
+
+.construct-accessible-lettertab {
+    padding: 10px 15px;
+    border-top: 1px solid #c7cdd1;
+    border-right: 1px solid #c7cdd1;
+    border-left: 1px solid #c7cdd1;
+    margin: 0 0.2em 0px 0!important;
+}
+
+.construct-accessible-lettertab:hover {
+    color: #000!important;
+}
+
+
+/* responsive, UMich gold*/
+
+.construct-accessible-gold-tab {
+    padding: 12px 15px;
+    border-top: 2px solid #FFCC02;
+    border-right: 2px solid #FFCC02;
+    border-left: 2px solid #FFCC02;
+    margin: -0.1px 0.2em 0px 0!important;
+}
+
+.construct-accessible-gold-tab:hover {
+    color: #333333!important;
+}
+
+@media (max-width: 1024px) {
+    .construct-accessible-tab {
+        line-height: unset;
+    }
+    .construct-accessible-lettertab img {
+        width: 90px!important;
+        height: 90px!important;
+    }
+    .construct-accessible-lettertab {
+        padding: 10px 8px;
+    }
+    .construct-accessible-gold-tab {
+        padding: 10px 8px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .lettertabslist {
+        max-width: 500px;
+    }
+    .construct-accessible-lettertab {
+        width: 135.06px;
+        height: unset!important;
+        padding: 10px 4px;
+    }
+}
+
+
+/* ----------------------------------------- callout/note boxes -------------------------------------------------------- */
+
+.construct-note-box p,
+.construct-note-box h2,
+.construct-note-box h3,
+.construct-note-box li {
+    color: #444!important;
+}
+
+
+/* ----------------------------------------- tables with same font size as ps and lis -------------------------------------------------------- */
+
+.construct-table-font-size {
+    font-size: 1.0625rem;
+}
+
+
+/* --------------------- slighlty bolder text. Canvas is now stripping this from inline CSS ---------------------*/
+
+.construct-font-weight-600 {
+    font-weight: 600;
+}
+
+.construct-font-weight-400 {
+    font-weight: 400;
+}
+
+
+/* --------------------- ES515/BA535 module overview page template mockup --------------------*/
+
+.construct-module-overview-grid-item {
+    position: relative;
+}
+
+.construct-module-overview-grid-item:hover {
+    color: white;
+    visibility: visible;
+    opacity: 1;
+    background-color: #001A37;
+    transition: .5s ease;
+}
+
+.construct-module-overview-grid-icon {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.construct-module-overview-grid-icon-top-right {
+    position: absolute;
+    top: 6.5%;
+    right: 6.5%;
+}
+
+.construct-module-overview-grid-icon-top-right-second-icon {
+    position: absolute;
+    top: 6.5%;
+    right: 25%;
+}
+
+.construct-module-overview-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-auto-rows: minmax(190px, 1fr);
+    grid-gap: 1px;
+    padding-bottom: 1px;
+    position: inherit;
+}
+
+.construct-theme-light-teal {
+    background-color: #b9d3d2;
+}
+
+.construct-theme-dark-teal {
+    background-color: #8dbebc;
+}
+
+.construct-module-overview-grid-item:hover img {
+    filter: invert(90%) sepia(99%) saturate(30%) hue-rotate(190deg) brightness(108%) contrast(99%);
+}
+
+
+/* preload images that are shown on hover - doesnt yet work on Safari */
+
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url('https://umich.instructure.com/files/19631350/download?download_frd=1') url('https://umich.instructure.com/files/19631543/download?download_frd=1') url('https://umich.instructure.com/files/19631556/download?download_frd=1') url('https://umich.instructure.com/files/19631573/download?download_frd=1') url('https://umich.instructure.com/files/19656088/download?download_frd=1') url('https://umich.instructure.com/files/19656109/download?download_frd=1') url('https://umich.instructure.com/files/19656118/download?download_frd=1') url('https://umich.instructure.com/files/19656164/download?download_frd=1') url('https://umich.instructure.com/files/19656155/download?download_frd=1') url('https://umich.instructure.com/files/19656350/download?download_frd=1') url('https://umich.instructure.com/files/19677883/download?download_frd=1') url('https://umich.instructure.com/files/19677911/download?download_frd=1') url('https://umich.instructure.com/files/19677917/download?download_frd=1') url('https://umich.instructure.com/files/19677936/download?download_frd=1') url('https://umich.instructure.com/files/19677934/download?download_frd=1') url('https://umich.instructure.com/files/19677938/download?download_frd=1');
+}
+
+
+/* make subheader readable against semi-transparent image background */
+
+.construct-tile-subheader {
+    font-weight: 500;
+}
+
+
+/* Module Overview Grid -----------------------------------------------------------*/
+
+
+/* preload images that are shown on hover - doesnt yet work on Safari */
+
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url('https://umich.instructure.com/files/20188891/download?download_frd=1') url('https://umich.instructure.com/files/19958255/download?download_frd=1') url('https://umich.instructure.com/files/19958272/download?download_frd=1') url('https://umich.instructure.com/files/19959875/download?download_frd=1') url('https://umich.instructure.com/files/19960396/download?download_frd=1') url('https://umich.instructure.com/files/20188963/download?download_frd=1') url('https://umich.instructure.com/files/20189246/download?download_frd=1') url('https://umich.instructure.com/files/20189484/download?download_frd=1') url('https://umich.instructure.com/files/20253997/download?download_frd=1') url('https://umich.instructure.com/files/20254095/download?download_frd=1') url('https://umich.instructure.com/files/20254147/download?download_frd=1') url('https://umich.instructure.com/files/20254177/download?download_frd=1') url('https://umich.instructure.com/files/20254213/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M0B1:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/20188891/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M1B1:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/19958255/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M1C1:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/19958272/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M1D1:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/19959875/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M1E1:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/19960396/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-C1B1:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/20188963/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M2B2:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/20189246/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M2D1:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/20189484/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M2D2:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/20253997/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M3B1:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/20254095/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M4A2:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/20254147/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M4C1:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/20254177/download?download_frd=1');
+}
+
+.construct-tile-background-BA535-M4D2:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+    background-image: url('https://umich.instructure.com/files/20254213/download?download_frd=1');
+}
+
+.construct-tile-background--hover-dynamic:hover {
+    background-color: #7dcec9;
+    background-size: cover;
+    transition: all .2s ease-in;
+}
+
+.cdk-grid-block:hover .construct-no-text-on-hover {
+    opacity: 0;
+}
+
+.construct-iframe-border {
+    border: 2px solid var(--ic-brand-font-color-dark-lightened-30)!important;
+    /* border-radius: 0.275rem; */
+}
+
+
+/*JONATHAN's CODE ENDS HERE*/

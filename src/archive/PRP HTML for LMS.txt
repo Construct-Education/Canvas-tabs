@@ -1,0 +1,32 @@
+PRP HTML
+
+   <div class="constructaccordionWrapper">
+        <div class="accordionItem close">
+            <p class="accordionItemHeading"><span style="font-size: 14pt;">1. Marginalized groups</span></p>
+            <div class="accordionItemContent">
+                <p>First, we want you to think about whether your intervention on this issue will affect <strong>communities</strong> <strong>that are the focus of equitable enforcement</strong>. Think about impacts on communities of <strong>color</strong>, <strong>low-income</strong> communities, <strong>immigrant</strong> communities, <strong>children</strong>, <strong>LGBTQ</strong> residents, <strong>returning citizens</strong> and others who have been involved in the <strong>criminal-justice system</strong>, individuals dealing with <strong>housing insecurity</strong>, and <strong>elderly</strong> persons. Is this a problem that may disproportionately impact <strong>vulnerable communities</strong>?</p>
+            </div>
+        </div>
+        <div class="accordionItem close">
+            <p class="accordionItemHeading"><span style="font-size: 14pt;">2. Lived experience</span></p>
+            <div class="accordionItemContent">
+                <p>Second, we want you to make sure that this is an <strong>actual problem</strong> that <strong>impacts</strong> the lives of <strong>actual people</strong>. Some issues seem like important issues, but do not affect lives significantly. In certain situations, office leadership might ask if people have complained about the problem. We do not want you to focus on constituent complaints. But we do want you to understand the <strong>lived experience</strong> of those impacted. You may not be able to know this perfectly right now. This will be an important point of guidance moving forward and can be crucial for developing both external and internal support.</p>
+            </div>
+        </div>
+        <div class="accordionItem close">
+            <p class="accordionItemHeading"><span style="font-size: 14pt;">3. Developing the law or gaining experience in a particular issue area</span></p>
+            <div class="accordionItemContent">
+                <p>Your case may push <strong>new boundaries</strong> for your office and your practice, and that can be particularly impactful as well. You also may be able to establish a <strong>new precedent</strong> or a <strong>new legal standard</strong> that could <strong>influence industry </strong>action.</p>
+            </div>
+        </div>
+        <div class="accordionItem close">
+            <p class="accordionItemHeading"><span style="font-size: 14pt;">4. Spurring other action</span></p>
+            <div class="accordionItemContent">
+                <p>Some initiatives may spur actors, either in the public or private sector, to take <strong>additional action</strong>. Your case may result in other enforcement agencies, both in and out of your state, engaging in similar cases or investigations. You might be able to engage an industry group about across-the-board changes. You might find <strong>new community-based partners</strong> eager to develop other connections. It is important to think about what could come <strong>beyond the specific impact</strong> you are hoping to achieve.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+

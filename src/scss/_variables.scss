@@ -1,0 +1,17 @@
+$main: #2C736C;
+$secondary: #BFBFBF;
+$text: #1c2726;
+
+$mainDark: darken($main, 20%);
+$secondaryDark: darken($secondary, 20%);
+$mainLight: lighten($main, 20%);
+$secondaryLight: lighten($secondary, 20%);
+
+
+// Spacing
+$xSmall: 5px;
+$small: 10px;
+$mid: 20px;
+$lmid: 30px;
+$large: 60px;
+$xLarge: 100px;

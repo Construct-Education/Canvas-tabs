@@ -1,0 +1,67 @@
+@use './variables'as *;
+
+.constr--accessible-tabs {
+    margin-bottom: $lmid;
+    margin-top: $lmid;
+
+}
+
+.constr--accessible-tabs--container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $small $xSmall;
+    padding: $small $small $xSmall;
+    margin-bottom: -$mid;
+}
+
+.constr--accessible-tab {
+    padding: $small $mid;
+    background-color: $secondary;
+    font-size: 1.3rem;
+    border-bottom: 5px solid transparent;
+    transform: translateY((-$xSmall));
+    $ease: cubic-bezier(0.8, 0.17, 0.66, 1.53);
+    transition: 500ms $ease transform;
+
+    &:hover {
+        background-color: $secondaryDark;
+    }
+
+    &[aria-hidden="false"] {
+        background-color: $main;
+        color: #ffffff;
+        padding: $small $lmid $small $small;
+        border-bottom-color: $mainDark;
+        transform: translateY((-0));
+        transition: 250ms $ease transform;
+    }
+}
+
+.constr--accessible-tabs--content--container {
+    background-color: $secondaryLight;
+    // TODO Polyfill this
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1;
+    margin-top: $xSmall;
+    padding: $lmid $mid;
+    border: 1px $secondaryDark solid;
+}
+
+.constr--accessible-tabs--content {
+    transform: scale(0);
+    opacity: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    transition: 500ms ease-out opacity,
+        transform 1ms ease;
+
+    &[aria-hidden="false"] {
+        position: relative;
+        opacity: 1;
+        transform: scale(1);
+        transition: 250ms ease-out opacity, transform 1ms ease;
+    }
+
+}
