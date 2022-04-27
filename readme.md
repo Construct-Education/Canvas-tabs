@@ -44,4 +44,3 @@ The following outlines v3 of Construct Education Canvas Tabs that are **made to 
 ## Note:
 
 1. You having two separator symbols(⁞) in one block level element i.e.: ` <div class="constr--accessible-tabs"><div>Tab 1⁞Content. Tab 2⁞</div></div>`; it will get rendered link this: `...<a... Tab 1></a>...<div...> Content. Tab 2⁞</div ` (_The tab 2 text will get added as part of tab 1's content_).
-2.
